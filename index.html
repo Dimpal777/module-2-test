@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forntend2 moduletest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="container">
+        <div>
+            <button id="img-1" onclick="openFormFunction()"><img class="img" src="hacker img1.jpg" alt="img1"></button>
+        </div>
+
+        <div>
+            <button id="img-2" onclick="displayFormInfoFunction()"><img class="img" src="hacker img 2.jpg"alt="img2"></button>
+        </div>
+
+        <div>
+            <button id="img-3" onclick="displayDiceWthScore()"><img class="img" src="hacker img3.jpg" alt="img3"></button>
+        </div>
+
+        <div>
+            <button id="img-4" onclick="generateCouponCodeFunction()"><img class="img" src="hacker img 4.jpg"alt="img4"></button>
+        </div>
+    </div>
+
+
+    <!-- Form -->
+    <div class="form-Group hidden" id="form">
+        <label for="name"><b> Name ~</b> </label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="userName"><b>UserName ~ </b> </label>
+        <input type="text" id="userName" required><br><br>
+
+        <label for="email"><b>Email ~ </b> </label>
+        <input type="email" id="email" required><br><br>
+
+        <button id="sumbitBtn" type="submit" onclick="submitFormInfoFunction()"><strong>Submit</strong> </button>
+    </div>
+
+    <!-- Display Form -->
+    <div class="displayformInfo hidden" id="displayInfo">
+        <h2><u>Your information is</u> </h2><br>
+        <span id="info"></span><br><br>
+        <p class="display"> <u>Click on next Image to continue procced</u> </p>
+    </div>
+
+    <!-- dice image with score  -->
+    <div class="diceWthScore hidden" id="diceWthScore">
+        <p>Attempts left : <span id="attemptsLeft">0</span></p><br>
+        <div>
+            <button id="dice-Image" onclick="diceClick()"><img class="img" src="dice-image.jpg"
+                    alt="diceImage"></button><br><br>
+            <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+            <p>Your total score is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Congratulations and try again Image -->
+    <div>
+        <img class="hidden" id="congratsImage" src="congoo.jpeg" width="900px" alt="congratsImage">
+    </div>
+    <div>
+        <img class="hidden" id="tryAgainImage" src="oops img.png" width="900px" alt="tryAgainImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hidden class */
+  .hidden {
+    display: none;
+    
+  }
+  
+  /* image styling */
+  .img {
+    width: 320px;
+    height: 320px;
+    margin: 1rem;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Form group and input elements */
+  .form-Group {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  #sumbitBtn {
+    padding: 0.3rem;
+    font-size: 2rem;
+  }
+  
+  /* Display info */
+  #displayInfo {
+    margin: 3rem;
+  }
+  .display{
+   font-size: 2rem;
+  }
+  
+  #info {
+    font-size: 2rem;
+  }
+  
+  /* dice Image container*/
+  #diceWthScore {
+    margin: 1.9rem;
+  }
+  
